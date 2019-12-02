@@ -1,18 +1,18 @@
-# VERSION 1.10.5
+# VERSION 1.10.6
 # AUTHOR: Matthieu "Puckel_" Roisil
 # DESCRIPTION: Basic Airflow container
-# BUILD: docker build --rm -t puckel/docker-airflow .
+# BUILD: docker build --rm -t duyetdev/docker-airflow .
 # SOURCE: https://github.com/puckel/docker-airflow
 
 FROM python:3.7-slim-stretch
-LABEL maintainer="Puckel_"
+LABEL maintainer="Duyet Le"
 
 # Never prompts the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
 
 # Airflow
-ARG AIRFLOW_VERSION=1.10.5
+ARG AIRFLOW_VERSION=1.10.6
 ARG AIRFLOW_USER_HOME=/usr/local/airflow
 ARG AIRFLOW_DEPS=""
 ARG PYTHON_DEPS=""
