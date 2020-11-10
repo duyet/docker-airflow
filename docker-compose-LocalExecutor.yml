@@ -8,7 +8,7 @@ services:
             - POSTGRES_DB=airflow
 
     webserver:
-        image: duyetdev/airflow:1.10.12
+        image: duyetdev/airflow:2.0.0b1
         restart: always
         depends_on:
             - postgres
